@@ -1,0 +1,130 @@
+/*
+    David Sosa
+    CPSC 332 - Web Development
+    Homework 3 - CSS
+    Last Modified: Septempber 30, 2024
+*/
+/* Header Styling */
+header {
+    background-color: #444;
+    color: white;
+    padding: 15px;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+}
+
+/* Navigation Styling */
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+html {
+    background-color: #fffbfb;
+}
+
+/**/
+img {
+    border-radius: 8px;
+    max-width: 100%;
+    height: auto;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 40% 60%;
+}
+
+.introduction {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.introduction > * {
+    padding: 15px;
+    margin: 10px;
+    color: #575757;
+    box-shadow: 12px 12px 1px #d7d3e7cf;
+    background-color: #d7d3e74d;
+    flex: 0 1 90%;
+}
+
+.intro-paragraph {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.skills-column {
+    flex: 0 1 25%;
+}
+
+.relevant-skills {
+    list-style: circle;
+}
+
+.additional-skills {
+    list-style: square;
+}
+
+/*
+career summary 
+*/
+
+#career-summary {
+    margin: 20px;
+}
+
+table {
+    border-collapse: collapse;
+    border-radius: 10px;
+    width: 100%;
+    overflow: hidden;
+}
+
+th,
+td {
+    border: 1px solid black;
+    padding: 8px;
+}
+
+section {
+    padding: 10px;
+}
+
+.alternate-1 {
+    background-color: #d7d3e7;
+}
+
+.alternate-2 {
+    background-color: #d7d3e757;
+}
+
+.my-centered-text {
+    text-align: center;
+}
+
+.right {
+    background-color: #d7d3e72f;
+    margin: 10px;
+    padding: 15px;
+}
