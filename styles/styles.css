@@ -2,19 +2,29 @@
     David Sosa
     CPSC 332 - Web Development
     Homework 3 - CSS
-    Last Modified: Septempber 30, 2024
+    Last Modified: October 2, 2024
 */
+
 /* Header Styling */
 header {
     background-color: #444;
     color: white;
     padding: 15px;
     text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
 }
 
-header h1 {
+header h2 {
     font-size: 1.8rem;
     margin-bottom: 10px;
+    margin-right: 10px;
+}
+
+.logo {
+    width: 30px;
+    height: 30px;
 }
 
 /* Navigation Styling */
@@ -43,11 +53,12 @@ html {
     background-color: #fffbfb;
 }
 
-/**/
+/*Overall Body Styling*/
 img {
     border-radius: 8px;
     max-width: 100%;
     height: auto;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .container {
@@ -55,27 +66,27 @@ img {
     grid-template-columns: 40% 60%;
 }
 
-.introduction {
+.left {
     display: flex;
     flex-wrap: wrap;
 }
 
-.introduction > * {
-    padding: 15px;
+.left > * {
+    padding: 10px;
     margin: 10px;
     color: #575757;
     box-shadow: 12px 12px 1px #d7d3e7cf;
     background-color: #d7d3e74d;
-    flex: 0 1 90%;
+    flex: 0 1 100%;
 }
 
-.intro-paragraph {
+.intro-paragraph-area {
     display: flex;
     flex-wrap: wrap;
 }
 
 .skills-column {
-    flex: 0 1 25%;
+    flex: 0 1 50%;
 }
 
 .relevant-skills {
@@ -84,6 +95,10 @@ img {
 
 .additional-skills {
     list-style: square;
+}
+
+a {
+    transition: 0.3s;
 }
 
 /*
@@ -99,11 +114,18 @@ table {
     border-radius: 10px;
     width: 100%;
     overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+th {
+    text-transform: uppercase;
+    letter-spacing: 1px;
 }
 
 th,
 td {
     border: 1px solid black;
+    text-align: left;
     padding: 8px;
 }
 
@@ -124,7 +146,16 @@ section {
 }
 
 .right {
-    background-color: #d7d3e72f;
-    margin: 10px;
-    padding: 15px;
+    background-color: #d7d3e74d;
+    box-shadow: 12px 12px 1px #d7d3e7cf;
+    padding: 10px;
+    margin: 20px;
+}
+
+.hobbies {
+    list-style: upper-roman;
+}
+
+.sports {
+    list-style: lower-alpha;
 }
