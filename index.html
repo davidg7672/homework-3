@@ -2,7 +2,7 @@
     David Sosa
     CPSC 332 - Web Development
     Homework 3 - CSS
-    Last Modified: Septempber 30, 2024
+    Last Modified: October 2, 2024
  -->
 <!DOCTYPE html>
 <html lang="en">
@@ -33,32 +33,31 @@
     <body>
         <header>
             <h2>David Sosa</h2>
+            <img src="./images/favicon.ico" alt="logo" class="logo" />
             <nav>
                 <ul>
                     <li>
-                        <a href="./assets/career-summary.html"
-                            >Career Summary</a
-                        >
+                        <a href="#career-summary">Career Summary </a>
                     </li>
                     <li>
-                        <a href="./assets/education-and-qualifications.html"
-                            >Education and Qualifications</a
-                        >
+                        <a href="#education-and-qualifications"
+                            >Education and Qualifications
+                        </a>
                     </li>
                     <li>
-                        <a href="./assets/interest-and-hobbies.html"
-                            >Interest and Hobbites</a
-                        >
+                        <a href="#interests-and-hobbies"
+                            >Interest and Hobbies
+                        </a>
                     </li>
                 </ul>
             </nav>
         </header>
         <div class="container">
-            <section class="introduction">
-                <div class="intro-picture">
+            <section class="left">
+                <div class="intro-picture-area">
                     <h3>
-                        David Sosa - Software Developer, CS Student, & Expert
-                        Cook
+                        David Sosa - Software Developer, Lego Enthusiast, &
+                        Expert Cook
                     </h3>
                     <img
                         src="./images/david-with-lion.jpg"
@@ -68,26 +67,35 @@
                     />
                 </div>
 
-                <div class="intro-paragraph">
-                    <br />
-                    <h2>About me</h2>
-                    <p class="paragraph-box">
-                        I'm David, and I'm a Computer Science Major, with a
-                        Minor in Economics at Gonzaga University. I was born and
-                        raised in a beautiful small city in Central Washington
-                        called Wenatchee. I'm a huge fan of blockchain, making
-                        cools apps, and embedded systems. Anything Econ, or
-                        Finance related is also super cool, and I'm always down
-                        to talk about it. Feel free to reach out!
-                    </p>
+                <div class="intro-paragraph-area">
+                    <div class="paragraph-box">
+                        <h2>About me</h2>
+                        <p>
+                            I'm David, and I'm a Computer Science Major, with a
+                            Minor in Economics at Gonzaga University. I was born
+                            and raised in a beautiful small city in Central
+                            Washington called Wenatchee. In between the
+                            mountains and the pleateu, it's a great place to
+                            call home. I'm a huge fan of blockchain, making
+                            cools apps, and embedded systems. Anything Econ, or
+                            Finance related is also super cool, and I'm always
+                            down to talk about it. Feel free to reach out!
+                        </p>
+                    </div>
+
                     <div class="skills-column">
                         <h2 class="heading">Skills:</h2>
                         <ul class="relevant-skills">
+                            <li>Next.js</li>
                             <li>Bootstrap</li>
                             <li>React</li>
-                            <li>Next.js</li>
                             <li>Node.js</li>
+                            <li>MongoDB</li>
+                            <li>Express.js</li>
                             <li>Typescript</li>
+                            <li>Java</li>
+                            <li>C++</li>
+                            <li>Python</li>
                         </ul>
                     </div>
 
@@ -98,6 +106,8 @@
                             <li>Public Speaking</li>
                             <li>Customer Service</li>
                             <li>Employee Training</li>
+                            <li>Excellent Verbal and Written Communication</li>
+                            <li>Emotional Intelligence</li>
                         </ul>
                     </div>
                 </div>
@@ -188,7 +198,7 @@
                                 </tr>
                                 <tr class="alternate-1">
                                     <td>Server/Server Mentor</td>
-                                    <td>South at Pybus</td>
+                                    <td>South at Pybus and Leavenworth</td>
                                     <td>June 2020 - August 2024</td>
                                     <td>
                                         <ul>
@@ -218,13 +228,13 @@
                     </div>
                 </div>
 
-                <div class="education-and-qualifications">
+                <div id="education-and-qualifications">
                     <table>
                         <caption>
                             <h2>David's Education and Details</h2>
                         </caption>
                         <thead>
-                            <tr>
+                            <tr class="alternate-1">
                                 <th>Education</th>
                                 <th>Year of Graduation</th>
                                 <th>Activities</th>
@@ -232,27 +242,28 @@
                             </tr>
                         </thead>
                         <tbody>
-                            <tr>
+                            <tr class="alternate-2">
                                 <td>Gonzaga University</td>
                                 <td>Class of 2026</td>
                                 <td>
                                     <ul>
+                                        <li>Gonzaga ACM</li>
                                         <li>Grappling Club</li>
                                         <li>Chrome Barbell Club</li>
-                                        <li>Gonzaga ACM</li>
                                     </ul>
                                 </td>
                                 <td>
                                     <ul>
                                         <li>Data Structures and Algorithms</li>
-                                        <li>Advanced Algorithms</li>
                                         <li>UI/UX Design</li>
                                         <li>Web Development</li>
                                         <li>Software Devleopment</li>
+                                        <li>Regression Analysis</li>
+                                        <li>Money and Banking</li>
                                     </ul>
                                 </td>
                             </tr>
-                            <tr>
+                            <tr class="alternate-1">
                                 <td>Wenatchee Valley College</td>
 
                                 <td>Class of 2022</td>
@@ -270,7 +281,7 @@
                                     </ul>
                                 </td>
                             </tr>
-                            <tr>
+                            <tr class="alternate-2">
                                 <td>Eastmont High School</td>
                                 <td>Class of 2022</td>
                                 <td>
@@ -289,88 +300,93 @@
                     </table>
 
                     <!-- Qualifications Sections -->
-                    <table>
-                        <caption>
-                            <h2>What makes David Qualified?</h2>
-                        </caption>
-                        <thead>
-                            <tr>
-                                <th>Experience</th>
-                                <th>Time Period</th>
-                                <th>Skills Aquired</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td>
-                                    Developed Full-Stack Mock-up Application of
-                                    OpenSea
-                                </td>
-                                <td>Summer 2024</td>
-                                <td>
-                                    <ul>
-                                        <li>
-                                            Learned and practiced Full Stack
-                                            Web-Development
-                                        </li>
-                                        <li>
-                                            Learned the fundamentals of
-                                            Blockchain Development. This
-                                            includes deploying on the
-                                            blockchain, to minting NFTs .
-                                        </li>
-                                        <li>
-                                            Learned for the Typescript front-end
-                                            and Solidity for the backend .
-                                        </li>
-                                    </ul>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    Server at South in Pybus and Leavenworth
-                                </td>
-                                <td>June 2020 - August 2024</td>
-                                <td>
-                                    <ul>
-                                        <li>
-                                            Sharpened up my communication skills
-                                        </li>
-                                        <li>
-                                            Learned how to build strong
-                                            relationshpis with random people who
-                                            I met every day.
-                                        </li>
-                                        <li>
-                                            Learned how to manage stress under
-                                            stressful sitatuations.
-                                        </li>
-                                        <li>
-                                            Aquired MAST and Bardentending
-                                            License.
-                                        </li>
-                                    </ul>
-                                </td>
-                            </tr>
-                        </tbody>
-                    </table>
+                    <div class="qualifications">
+                        <table>
+                            <caption>
+                                <h2>What makes David Qualified?</h2>
+                            </caption>
+                            <thead>
+                                <tr class="alternate-1">
+                                    <th>Experience</th>
+                                    <th>Time Period</th>
+                                    <th>Skills Aquired</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr class="alternate-2">
+                                    <td>
+                                        Developed Full-Stack Mock-up Application
+                                        of OpenSea
+                                    </td>
+                                    <td>Summer 2024</td>
+                                    <td>
+                                        <ul>
+                                            <li>
+                                                Learned and practiced Full Stack
+                                                Web-Development
+                                            </li>
+                                            <li>
+                                                Learned the fundamentals of
+                                                Blockchain Development. This
+                                                includes deploying on the
+                                                blockchain, to minting NFTs .
+                                            </li>
+                                            <li>
+                                                Learned for the Typescript
+                                                front-end and Solidity for the
+                                                backend .
+                                            </li>
+                                        </ul>
+                                    </td>
+                                </tr>
+                                <tr class="alternate-1">
+                                    <td>
+                                        Server at South in Pybus and Leavenworth
+                                    </td>
+                                    <td>June 2020 - August 2024</td>
+                                    <td>
+                                        <ul>
+                                            <li>
+                                                Sharpened up my communication
+                                                skills
+                                            </li>
+                                            <li>
+                                                Learned how to build strong
+                                                relationshpis with random people
+                                                who I met every day.
+                                            </li>
+                                            <li>
+                                                Learned how to manage stress
+                                                under stressful sitatuations.
+                                            </li>
+                                            <li>
+                                                Aquired MAST and Bardentending
+                                                License.
+                                            </li>
+                                        </ul>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
                 </div>
-                <div class="interests-and-hobbies">
+                <div id="interests-and-hobbies">
                     <h2 class="my-centered-text">Interest and Hobbies</h2>
                     <div>
                         <h3>Here are my favorite Interest and Hobbies</h3>
-                        <ol type="I">
+                        <ol class="hobbies">
                             <li>Cooking Chinese, Korean, and Indian Cuisine</li>
                             <li>Jiu Jitsu</li>
                             <li>Reading</li>
                             <li>Gardening</li>
                             <li>Weight lifting</li>
+                            <li>Building cool things with Legos</li>
                         </ol>
                         <p>
                             I'm a pretty big sports fan, so anything that
                             includes:
                         </p>
-                        <ol type="a">
+                        <ol class="sports">
                             <li>UFC</li>
                             <li>NBA</li>
                             <li>NFL</li>
@@ -397,3 +413,4 @@
         </div>
     </body>
 </html>
+
